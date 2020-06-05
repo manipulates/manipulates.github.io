@@ -3,6 +3,7 @@ body {
   padding: 20px;
   font-family: monospace;
   font-size: 9px;
+  color: #fff;
 }
 
 #logo {
@@ -10,6 +11,7 @@ body {
   border-radius: 4px;
   padding: 10px;
   font-size: 9px;
+  color: #fff;
   text-align: center;
   transition: all 0.5s;
   margin: 0 auto;
