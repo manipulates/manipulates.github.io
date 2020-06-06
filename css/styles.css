@@ -17,3 +17,14 @@ body {
   margin: -40px auto;
   width: 600px;
 }
+
+#ascii {
+  color: #fff;
+  background: #000;
+  display: inline-block;
+  white-space: pre;
+  letter-spacing: 0;
+  line-height: 1.4;
+  font-family: 'Consolas','BitstreamVeraSansMono','CourierNew',Courier,monospace;
+  font-size: 9px;
+}
