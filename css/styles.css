@@ -8,14 +8,12 @@ body {
 
 #logo {
   background: #000;
-  border-radius: 4px;
   padding: 5px;
-  font-size: 9px;
+  font-size: 11px;
   color: #fff;
   text-align: center;
-  transition: all 0.5s;
+/*  transition: all 0.5s; */
   margin: -50px auto;
-  width: 600px;
 }
 
 .ascii {
@@ -24,7 +22,7 @@ body {
   display: inline-block;
   white-space: pre;
   letter-spacing: 0;
-  line-height: 1.4;
+  line-height: 1.4em;
   font-family: 'Consolas','BitstreamVeraSansMono','CourierNew',Courier,monospace;
   font-size: 9px;
 }
