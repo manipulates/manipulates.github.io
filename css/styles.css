@@ -26,3 +26,9 @@ body {
   font-family: 'Consolas','BitstreamVeraSansMono','CourierNew',Courier,monospace;
   font-size: 9px;
 }
+
+.ansii {
+  font-size: 10pt;
+  font-family: "Courier New", Monospace;
+  white-space: pre;
+}
