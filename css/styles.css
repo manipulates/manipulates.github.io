@@ -4,6 +4,8 @@ body {
   font-family: monospace;
   font-size: 9px;
   color: #fff;
+  text-align: center;
+  margin: 0 auto;
 }
 
 a {
