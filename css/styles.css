@@ -87,6 +87,7 @@ p {
 .text {
   position: relative;
   display: inline-block;
+  line-height: 18px;
 }
 
 /* blinking cursor */
@@ -99,9 +100,9 @@ p {
   display: inline-block;
   background-color: #606060;
   vertical-align: top;
-  width: 7px;
+  width: 8px;
   /* Set height to the line height of .text */
-  height: 14px;
+  height: 18px;
   -webkit-animation: blink 1s step-end infinite;
   animation: blink 1s step-end infinite;
   }
