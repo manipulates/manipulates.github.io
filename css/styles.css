@@ -95,14 +95,14 @@ p {
   content: "";
   position: absolute;
   top: 0;
-  right: -15px;
+  right: -6px;
   /* Remove display: inline-block if not required to be on the same line as text etc */
   display: inline-block;
   background-color: #606060;
   vertical-align: top;
-  width: 10px;
+  width: 6px;
   /* Set height to the line height of .text */
-  height: 24px;
+  height: 12px;
   /* 
   Animation paramaters:
   blink = animation-name, 
