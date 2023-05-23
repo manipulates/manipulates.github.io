@@ -95,8 +95,8 @@ p {
 .text::after {
   content: "";
   position: absolute;
-  top: -1px;
-  right: -10px;
+  top: 0px;
+  right: -12px;
   display: inline-block;
   background-color: #606060;
   vertical-align: top;
