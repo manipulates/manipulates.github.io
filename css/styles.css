@@ -94,22 +94,14 @@ p {
 .text::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: -6px;
-  /* Remove display: inline-block if not required to be on the same line as text etc */
+  top: -1px;
+  right: -10px;
   display: inline-block;
   background-color: #606060;
   vertical-align: top;
-  width: 6px;
+  width: 7px;
   /* Set height to the line height of .text */
-  height: 12px;
-  /* 
-  Animation paramaters:
-  blink = animation-name, 
-  1s = animation-duration, 
-  step-end = animation-timing-function,
-  infinite = animation-iteration-count
-  */
+  height: 14px;
   -webkit-animation: blink 1s step-end infinite;
   animation: blink 1s step-end infinite;
   }
