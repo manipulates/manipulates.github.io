@@ -84,6 +84,11 @@ p {
   color: #fff;
   }
 
+.text {
+  position: relative;
+  display: inline-block;
+}
+
 /* blinking cursor */
 
 .text::after {
