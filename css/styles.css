@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
 body {
   background: url(images/logo.png) center center #000;
   padding: 20px;
@@ -21,4 +27,16 @@ p {
 .logo {
   max-width: 600px;
   width: auto;
+}
+
+.container {
+  position: relative;
+  height: 400px;
+}
+
+.centered {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
