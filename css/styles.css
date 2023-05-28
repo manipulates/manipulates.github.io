@@ -1,84 +1,15 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -86,36 +17,23 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: none;
 }
 
@@ -124,8 +42,7 @@ table {
   border-spacing: 0;
 }
 
-/* begin main styles */
-
+/* Main Styles */
 body {
   background: #000;
   padding: 20px;
@@ -137,12 +54,7 @@ body {
 
 a {
   color: #49a2c5;
-}
-
-p {
-  font-family: "Hack", monospace;
-  line-height: 1.8em;
-  font-size: 12px;
+  text-decoration: none;
 }
 
 .container {
@@ -153,19 +65,15 @@ p {
   max-width: 100%;
 }
 
-.logo {
-  max-width: 100%;
+.logo img {
+  display: block;
   height: auto;
   width: 600px;
   margin: 0 auto;
 }
 
-.logo img {
-    width: 100%;
-}
-
 .content {
-  /* hmm */
+  /* Add styles if necessary */
 }
 
 .content p {
@@ -180,8 +88,6 @@ p {
   line-height: 18px;
 }
 
-/* blinking cursor */
-
 .text::after {
   content: "";
   position: absolute;
@@ -191,51 +97,38 @@ p {
   background-color: #606060;
   vertical-align: top;
   width: 8px;
-  /* Set height to the line height of .text */
   height: 18px;
   -webkit-animation: blink 1s step-end infinite;
   animation: blink 1s step-end infinite;
 }
 
 @-webkit-keyframes blink {
-  0% {
+  0%, 100% {
     opacity: 1;
   }
   50% {
     opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
 @keyframes blink {
-  0% {
+  0%, 100% {
     opacity: 1;
   }
   50% {
     opacity: 0;
   }
-  100% {
-    opacity: 1;
-  }
 }
 
-/* Media Calls */
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-}
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
-}
-
+/* Media Queries */
 @media all and (min-width: 480px) and (max-width: 768px) {
   .logo img {
-    width: 350px !important;
+    width: 350px;
   }
 }
 
 @media all and (max-width: 480px) {
   .logo img {
-    width: 350px !important;
+    width: 350px;
   }
 }
