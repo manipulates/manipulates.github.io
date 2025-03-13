@@ -91,14 +91,14 @@ body {
   line-height: 1;
   white-space: pre;
   color: #fff; /* Solid white to stand out */
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .content p {
   font-family: "Hack", monospace;
   font-size: 12px;
   color: #fff; /* Solid white for readability */
-  margin: 10px 0;
+  margin: 0px 0 10px 0;
 }
 
 a {
