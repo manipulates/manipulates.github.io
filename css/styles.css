@@ -92,7 +92,7 @@ a:hover {
 
 .ascii-logo {
   font-family: "Hack", monospace;
-  font-size: 10px; /* Adjusted for readability; tweak as needed */
+  font-size: 12px; /* Adjusted for readability; tweak as needed */
   line-height: 1; /* Ensures no extra spacing between ASCII lines */
   white-space: pre; /* Preserves ASCII formatting */
   color: #fff; /* Matches your text color */
