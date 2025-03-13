@@ -10,7 +10,6 @@
 .JMML  JMML  JMML.`Moo9^Yo..JMML  JMML..JMML. MMbmmd'   `Mbod"YML..JMML.`Moo9^Yo.`Mbmo`Mbmmd' db .JMML.`Ybmd9' 
                                               MM                                                               
                                             .JMML.                                                             
-
 */
 
 /* CSS Reset */
@@ -64,7 +63,8 @@ body {
   font-family: "Hack", monospace;
   color: #fff;
   text-align: center;
-  height: 100%;
+  height: 100vh; /* Changed to viewport height for full-screen centering */
+  margin: 0; /* Added to ensure no default margins interfere */
 }
 
 a {
@@ -72,24 +72,31 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline; /* Added hover effect for better UX */
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Updated to use viewport height */
+  height: 100vh; /* Ensures the container takes full viewport height */
 }
 
 .box {
   text-align: center;
+  padding: 20px;
   max-width: 90%;
   max-height: 90%;
 }
 
-.box img {
-  max-width: 100%;
-  height: auto;
-  width: auto; /* Added this line to prevent image distortion */
-  max-height: 100%; /* Added this line to ensure the image scales within the box */
+.ascii-logo {
+  font-family: "Hack", monospace;
+  font-size: 10px; /* Adjusted for readability; tweak as needed */
+  line-height: 1; /* Ensures no extra spacing between ASCII lines */
+  white-space: pre; /* Preserves ASCII formatting */
+  color: #fff; /* Matches your text color */
+  margin-bottom: 20px; /* Adds spacing below the logo */
 }
 
 .box p {
@@ -138,13 +145,19 @@ a {
 
 /* Media Queries */
 @media all and (min-width: 480px) and (max-width: 768px) {
-  .box img {
-    width: 350px;
+  .ascii-logo {
+    font-size: 8px; /* Smaller logo for medium screens */
+  }
+  .box p {
+    font-size: 11px; /* Slightly smaller text */
   }
 }
 
 @media all and (max-width: 480px) {
-  .box img {
-    width: 350px;
+  .ascii-logo {
+    font-size: 6px; /* Even smaller logo for mobile */
+  }
+  .box p {
+    font-size: 10px; /* Adjust text for small screens */
   }
 }
