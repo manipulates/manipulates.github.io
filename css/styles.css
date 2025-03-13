@@ -104,6 +104,7 @@ body {
 a {
   color: #49a2c5;
   text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
